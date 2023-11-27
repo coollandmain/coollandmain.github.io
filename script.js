@@ -5,18 +5,23 @@ function initializePage() {
 }
 
 function showHome() {
-    document.getElementById('home-title').style.display = 'block';
-    document.getElementById('home-content').style.display = 'block';
-    document.getElementById('coolland-smp').style.display = 'none';
+    document.getElementById('smp-title').style.display = 'none';
+    document.getElementById('smp-content').style.display = 'none';
+    document.getElementById('events-title').style.display = 'none';
+    document.getElementById('events-content').style.display = 'none';
+    document.getElementById('coolland-smp').style.display = 'block';
     document.getElementById('coolland-events').style.display = 'none';
 }
 
 function showEvents() {
-    document.getElementById('home-title').style.display = 'none';
-    document.getElementById('home-content').style.display = 'none';
+    document.getElementById('smp-title').style.display = 'none';
+    document.getElementById('smp-content').style.display = 'none';
+    document.getElementById('events-title').style.display = 'block';
+    document.getElementById('events-content').style.display = 'block';
     document.getElementById('coolland-smp').style.display = 'none';
     document.getElementById('coolland-events').style.display = 'block';
 }
+
 
 function toggleSettings() {
     var settingsPopup = document.getElementById('settings-popup');
