@@ -15,8 +15,17 @@ function showEvents() {
     document.getElementById('home-title').style.display = 'none';
     document.getElementById('home-content').style.display = 'none';
     document.getElementById('coolland-smp').style.display = 'none';
-    document.getElementById('coolland-events').style.display = 'block';
+
+    var eventsTitle = document.getElementById('events-title');
+    var eventsContent = document.getElementById('events-content');
+
+    eventsTitle.innerText = "Coolland Events";
+    eventsContent.innerText = "Server IP: COOLLANDEVENTS.aternos.me\nChangelog: 1.0 Release:";
+
+    eventsTitle.style.display = 'block';
+    eventsContent.style.display = 'block';
 }
+
 
 function toggleSettings() {
     var settingsPopup = document.getElementById('settings-popup');
