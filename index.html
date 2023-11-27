@@ -1,123 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
-    <style>
-        body {
-            background-color: black; /* Default dark mode */
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        #header {
-            text-align: right;
-            padding: 10px;
-        }
-
-        #menu {
-            position: fixed;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: #333;
-            padding: 20px;
-            color: white;
-            z-index: 1;
-        }
-
-        #content {
-            margin-left: 200px; /* Adjust as needed based on the menu width */
-            padding: 20px;
-        }
-
-        .lime-background {
-            background-color: lime;
-            padding: 10px;
-            color: black;
-            text-decoration: none;
-        }
-
-        #settings-icon {
-            position: fixed;
-            bottom: 10px;
-            left: 10px;
-            cursor: pointer;
-            font-size: 20px;
-        }
-
-        #settings-popup {
-            display: none;
-            position: fixed;
-            bottom: 50px;
-            left: 10px;
-            background-color: #333;
-            padding: 10px;
-            color: white;
-            z-index: 2;
-        }
-    </style>
+    <title>Coolland</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
 
-<div id="header">
-    <a href="#" class="lime-background">Discord</a>
-</div>
+    <div id="header">
+        <a href="#" class="lime-background">Discord</a>
+    </div>
 
-<div id="menu">
-    <ul>
-        <li onclick="showHome()">Home</li>
-        <li onclick="showEvents()">Coolland Events Timing</li>
-    </ul>
-</div>
+    <div id="menu">
+        <ul>
+            <li onclick="showHome()" class="header-button">Coolland SMP</li>
+            <li onclick="showEvents()" class="header-button">Coolland Events</li>
+        </ul>
+    </div>
 
-<div id="content">
-    <h1 id="home-title">Coolland</h1>
-    <p id="home-content">WORK IN PROGRESS</p>
+    <div id="content">
+        <h1 id="home-title">Coolland</h1>
+        <p id="home-content">WORK IN PROGRESS</p>
 
-    <h1 id="events-title">Coolland Events Timing</h1>
-    <p id="events-content">WORK IN PROGRESS</p>
-</div>
+        <div id="coolland-smp" style="display: none;">
+            <?php include 'CoollandSMP.html'; ?>
+        </div>
 
-<div id="settings-icon" onclick="toggleSettings()">⚙️</div>
+        <div id="coolland-events" style="display: none;">
+            <?php include 'CoollandEvents.html'; ?>
+        </div>
+    </div>
 
-<div id="settings-popup">
-    <label for="theme">Choose a theme:</label>
-    <select id="theme" onchange="changeTheme()">
-        <option value="dark">Dark Mode</option>
-        <option value="white">White Mode</option>
-    </select>
-</div>
+    <div id="settings-icon" onclick="toggleSettings()">⚙️</div>
 
-<script>
-    function showHome() {
-        document.getElementById('home-title').style.display = 'block';
-        document.getElementById('home-content').style.display = 'block';
-        document.getElementById('events-title').style.display = 'none';
-        document.getElementById('events-content').style.display = 'none';
-    }
+    <div id="settings-popup">
+        <label for="theme">Choose a theme:</label>
+        <select id="theme" onchange="changeTheme()">
+            <option value="dark">Dark Mode</option>
+            <option value="white">White Mode</option>
+        </select>
+    </div>
 
-    function showEvents() {
-        document.getElementById('home-title').style.display = 'none';
-        document.getElementById('home-content').style.display = 'none';
-        document.getElementById('events-title').style.display = 'block';
-        document.getElementById('events-content').style.display = 'block';
-    }
-
-    function toggleSettings() {
-        var settingsPopup = document.getElementById('settings-popup');
-        settingsPopup.style.display = (settingsPopup.style.display === 'block') ? 'none' : 'block';
-    }
-
-    function changeTheme() {
-        var theme = document.getElementById('theme').value;
-        document.body.style.backgroundColor = (theme === 'dark') ? 'black' : 'white';
-        document.body.style.color = (theme === 'dark') ? 'white' : 'black';
-    }
-</script>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
