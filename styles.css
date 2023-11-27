@@ -43,6 +43,15 @@ body {
     padding: 20px;
 }
 
+#home {
+    display: block;
+}
+
+#coolland-smp,
+#coolland-events {
+    display: none;
+}
+
 .lime-background {
     align-items: end;
     margin-left: 10px;
