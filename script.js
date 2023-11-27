@@ -4,10 +4,10 @@ function initializePage() {
     document.getElementById('coolland-events').style.display = 'none';
 }
 
-function showHome() {
-    document.getElementById('home').style.display = 'block';
+function showEvents() {
+    document.getElementById('home').style.display = 'none';
     document.getElementById('coolland-smp').style.display = 'none';
-    document.getElementById('coolland-events').style.display = 'none';
+    document.getElementById('coolland-events').style.display = 'block';
 }
 
 function showEvents() {
