@@ -30,3 +30,4 @@ function changeTheme() {
 }
 
 window.onload = initializePage;
+
