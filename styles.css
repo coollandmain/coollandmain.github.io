@@ -108,17 +108,25 @@ body {
 }
 
 /* Style for announcements and comments section */
-#announcements-section {
+/* Style for messaging section */
+#messaging-section {
     margin-top: 40px;
 }
 
-#announcements-container h3 {
-    color: #208b25;
+#message-container {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-#announcements-container p {
-    margin-bottom: 20px;
+#messaging-section label,
+#messaging-section input,
+#messaging-section button {
+    margin-top: 10px;
 }
+
 
 /* Phone Screen*/
 @media screen and (max-width: 600px) {
