@@ -92,7 +92,7 @@ body {
 /* Phone Screen*/
 @media screen and (max-width: 600px) {
     #content {
-        margin-left: 100px;
+        margin-left: 225px;
     }
 }
 
