@@ -95,7 +95,7 @@ body {
 /* Phone Screen*/
 @media screen and (max-width: 600px) {
     #content {
-        margin-left: 135px;
+        margin-left: 115px;
     }
 #menu {
     position: fixed;
@@ -112,7 +112,7 @@ body {
 }
 #button-home,
 #button-events {
-    margin-left: -30px; /* Move the buttons 30 pixels to the left */
+    margin-left: -60px; /* Move the buttons 30 pixels to the left */
 }
 
 
