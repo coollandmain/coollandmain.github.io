@@ -84,5 +84,17 @@ body {
     z-index: 2;
 }
 
+#content {
+    margin-left: 400px;
+    padding: 20px;
+}
+
+/* Phone Screen*/
+@media screen and (max-width: 600px) {
+    #content {
+        margin-left: 100px;
+    }
+}
+
 
 
