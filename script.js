@@ -20,8 +20,31 @@ function showMessage() {
 
     // Show the "Message" section
     document.getElementById('message').style.display = 'block';
+
+    // Initialize messaging section
+    // Initialize messaging section
+    initializeMessaging();
 }
-// Add functions for registering, logging in, and posting announcements
+
+function initializeMessaging() {
+    // Clear message container
+    document.getElementById('message-container').innerHTML = '';
+
+    // Set up event listeners or any other initialization for messaging
+}
+
+function sendMessage() {
+    var userMessage = document.getElementById('user-message').value;
+
+    // Display the message in the message container
+    var messageContainer = document.getElementById('message-container');
+    var messageElement = document.createElement('div');
+    messageElement.textContent = userMessage;
+    messageContainer.appendChild(messageElement);
+
+    // Clear the input field
+    document.getElementById('user-message').value = '';
+}
 function register() {
     // Get the entered username and password for registration
     var registerUsername = document.getElementById('register-username').value;
@@ -94,6 +117,7 @@ window.addEventListener('beforeunload', function () {
         document.body.style.color = 'black';
     }
 });
+    
 //phone
 document.getElementById('button-home').addEventListener('click', showHome);
 document.getElementById('button-events').addEventListener('click', showEvents);
