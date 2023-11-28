@@ -92,9 +92,23 @@ body {
 /* Phone Screen*/
 @media screen and (max-width: 600px) {
     #content {
-        margin-left: 225px;
+        margin-left: 170px;
     }
-}
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    z-index: 1;
+}}
+
+
 
 
 
