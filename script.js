@@ -13,6 +13,14 @@ function showEvents() {
     document.getElementById('home').style.display = 'none';
     document.getElementById('coolland-events').style.display = 'block';
 }
+function showMessage() {
+    // Hide other sections
+    document.getElementById('home').style.display = 'none';
+    document.getElementById('coolland-events').style.display = 'none';
+
+    // Show the "Message" section
+    document.getElementById('message').style.display = 'block';
+}
 // Add functions for registering, logging in, and posting announcements
 function register() {
     // Get the entered username and password for registration
