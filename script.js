@@ -44,6 +44,13 @@ window.addEventListener('beforeunload', function () {
         document.body.style.color = 'black';
     }
 });
+document.getElementById('button-home').addEventListener('touchend', function () {
+    showHome();
+});
+
+document.getElementById('button-events').addEventListener('touchend', function () {
+    showEvents();
+});
 
 
 window.onload = initializePage;
