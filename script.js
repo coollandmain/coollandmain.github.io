@@ -25,7 +25,26 @@ function changeTheme() {
     var theme = document.getElementById('theme').value;
     document.body.style.backgroundColor = (theme === 'dark') ? 'black' : 'white';
     document.body.style.color = (theme === 'dark') ? 'white' : 'black';
+    // Save the theme preference to localStorage
+    localStorage.setItem('theme', theme);
 }
+
+// Check if a theme preference is saved in localStorage
+var savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    // Apply the saved theme
+    document.getElementById('theme').value = savedTheme;
+    changeTheme();
+}
+
+// Switch to light theme when the page is about to be unloaded
+window.addEventListener('beforeunload', function () {
+    if (document.getElementById('theme').value !== 'dark') {
+        document.body.style.backgroundColor = 'white';
+        document.body.style.color = 'black';
+    }
+});
+
 
 window.onload = initializePage;
 
