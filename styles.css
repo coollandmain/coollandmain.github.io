@@ -91,6 +91,34 @@ body {
     margin-left: 300px;
     padding: 20px;
 }
+#message {
+    display: none;
+}
+
+/* Style for registration and login forms */
+#registration-form,
+#login-form {
+    margin-top: 20px;
+}
+
+#registration-form button,
+#login-form button,
+#announcements-section button {
+    margin-top: 10px;
+}
+
+/* Style for announcements and comments section */
+#announcements-section {
+    margin-top: 40px;
+}
+
+#announcements-container h3 {
+    color: #208b25;
+}
+
+#announcements-container p {
+    margin-bottom: 20px;
+}
 
 /* Phone Screen*/
 @media screen and (max-width: 600px) {
