@@ -91,42 +91,6 @@ body {
     margin-left: 300px;
     padding: 20px;
 }
-#message {
-    display: none;
-}
-
-/* Style for registration and login forms */
-#registration-form,
-#login-form {
-    margin-top: 20px;
-}
-
-#registration-form button,
-#login-form button,
-#announcements-section button {
-    margin-top: 10px;
-}
-
-/* Style for announcements and comments section */
-/* Style for messaging section */
-#messaging-section {
-    margin-top: 40px;
-}
-
-#message-container {
-    max-height: 200px;
-    overflow-y: auto;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-#messaging-section label,
-#messaging-section input,
-#messaging-section button {
-    margin-top: 10px;
-}
-
 
 /* Phone Screen*/
 @media screen and (max-width: 600px) {
