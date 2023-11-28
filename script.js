@@ -47,8 +47,11 @@ window.addEventListener('beforeunload', function () {
 //phone
 document.getElementById('button-home').addEventListener('click', showHome);
 document.getElementById('button-events').addEventListener('click', showEvents);
+
+// Add touch events for mobile devices
 document.getElementById('button-home').addEventListener('touchend', showHome);
 document.getElementById('button-events').addEventListener('touchend', showEvents);
+
 
 
 window.onload = initializePage;
