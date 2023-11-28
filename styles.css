@@ -13,6 +13,7 @@ body {
 #button-home,
 #button-events {
     margin-left: -30px; /* Move the buttons 30 pixels to the left */
+    background-color: black;
 }
 .header-button,
 .lime-background {
