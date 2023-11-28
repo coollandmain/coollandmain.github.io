@@ -84,26 +84,4 @@ body {
     z-index: 2;
 }
 
-@media (max-width: 600px) {
-    #menu {
-        width: 100%;
-        padding: 10px;
-        position: static;
-    }
 
-    #content {
-        margin-left: 0;
-        padding: 10px;
-    }
-
-    #settings-popup {
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #settings-icon {
-        position: static;
-        margin-top: 10px;
-    }
-}
