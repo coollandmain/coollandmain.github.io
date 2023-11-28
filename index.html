@@ -19,7 +19,6 @@
     <ul>
         <li id="button-home" class="header-button" onclick="showHome()">Coolland SMP</li>
         <li id="button-events" class="header-button" onclick="showEvents()">Coolland Events</li>
-        <li id="button-message" class="header-button" onclick="showMessage()">Message</li>
     </ul>
 </div>
 
@@ -59,50 +58,6 @@
             <h3><p id="events-content">Vise informacija na Coolland Discordu</p></h3>
         </div>
     </div>
-    <div id="message" style="display: none;">
-    <!-- Registration Form -->
-    <div id="registration-form">
-        <h1>Register</h1>
-        <label for="register-username">Username:</label>
-        <input type="text" id="register-username" required>
-        <label for="register-password">Password:</label>
-        <input type="password" id="register-password" required>
-        <button onclick="register()">Register</button>
-    </div>
-
-    <!-- Login Form -->
-    <div id="login-form">
-        <h1>Login</h1>
-        <label for="login-username">Username:</label>
-        <input type="text" id="login-username" required>
-        <label for="login-password">Password:</label>
-        <input type="password" id="login-password" required>
-        <button onclick="login()">Login</button>
-    </div>
-
-    <!-- Announcements and Comments Section -->
-    <div id="announcements-section">
-        <!-- Form to post announcements -->
-        <h2>Post Announcement</h2>
-        <label for="announcement-username">Username:</label>
-        <input type="text" id="announcement-username" readonly>
-        <label for="announcement-message">Message:</label>
-        <textarea id="announcement-message" rows="4"></textarea>
-        <button onclick="postAnnouncement()">Post Announcement</button>
-
-        <!-- Display announcements and comments -->
-        <div id="announcements-container"></div>
-    </div>
-
-    <!-- Messaging Section -->
-    <div id="messaging-section">
-        <h2>Chat</h2>
-        <div id="message-container"></div>
-        <label for="user-message">Your Message:</label>
-        <input type="text" id="user-message" required>
-        <button onclick="sendMessage()" id="send-message-btn">Send Message</button>
-    </div>
-</div>
 
 
     <div id="settings-icon" onclick="toggleSettings()">⚙️</div>
