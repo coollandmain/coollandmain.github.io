@@ -1,22 +1,24 @@
-function initializePage() {
     // Hide the Coolland SMP and Events sections initially
-    document.getElementById('home').style.display = 'block';
-    document.getElementById('coolland-events').style.display = 'none';
+    showHome();
 }
 
 function showHome() {
-    document.getElementById('home').style.display = 'block';
-    document.getElementById('coolland-events').style.display = 'none';
+    toggleDisplay('home', 'coolland-events');
 }
 
 function showEvents() {
-    document.getElementById('home').style.display = 'none';
-    document.getElementById('coolland-events').style.display = 'block';
+    toggleDisplay('coolland-events', 'home');
 }
 
 function toggleSettings() {
-    var settingsPopup = document.getElementById('settings-popup');
-    settingsPopup.style.display = (settingsPopup.style.display === 'block') ? 'none' : 'block';
+    toggleDisplay('settings-popup');
+}
+
+function toggleDisplay(showId, hideId) {
+    document.getElementById(showId).style.display = 'block';
+    if (hideId) {
+        document.getElementById(hideId).style.display = 'none';
+    }
 }
 
 function changeTheme() {
@@ -42,14 +44,11 @@ window.addEventListener('beforeunload', function () {
         document.body.style.color = 'black';
     }
 });
-    
+
 //phone
 document.getElementById('button-home').addEventListener('click', showHome);
 document.getElementById('button-events').addEventListener('click', showEvents);
 document.getElementById('button-home').addEventListener('touchend', showHome);
 document.getElementById('button-events').addEventListener('touchend', showEvents);
 
-
-
 window.onload = initializePage;
-
