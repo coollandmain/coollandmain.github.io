@@ -1,5 +1,5 @@
 body {
-    background-color: black; /* Default dark mode */
+    background-color: black;
     color: white;
     font-family: Kanit, sans-serif;
     margin: 0;
@@ -10,11 +10,7 @@ body {
     text-align: right;
     padding: 10px;
 }
-#button-home,
-#button-events {
-    margin-left: -30px; /* Move the buttons 30 pixels to the left */
-    background-color: #42413e;
-}
+
 .header-button,
 .lime-background {
     align-items: end;
@@ -47,25 +43,9 @@ body {
     padding: 20px;
 }
 
-#home {
-    display: block;
-}
-
-#coolland-smp,
+#home,
 #coolland-events {
     display: none;
-}
-
-.lime-background {
-    align-items: end;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #208b25;
-    color: white;
-    text-decoration: none;
-    border-radius: 15px;
-    display: inline-block;
 }
 
 #settings-icon {
@@ -88,32 +68,28 @@ body {
     z-index: 2;
 }
 
-#content {
-    margin-left: 300px;
-    padding: 20px;
-}
-
-/* Phone Screen*/
+/* Phone Screen */
 @media screen and (max-width: 600px) {
     #content {
         margin-left: 115px;
     }
-#menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto;
-    z-index: 1;
-}
-#button-home,
-#button-events {
-    margin-left: -60px;
+    #menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow-y: auto;
+        z-index: 1;
+    }
+    #button-home,
+    #button-events {
+        margin-left: -60px;
+    }
 }
 
 
