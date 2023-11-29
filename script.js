@@ -1,5 +1,4 @@
 function initializePage() {
-    // Hide the Coolland SMP and Events sections initially
     document.getElementById('home').style.display = 'block';
     document.getElementById('coolland-events').style.display = 'none';
 }
