@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Coolland</title>
+    <title>Coolland Beta</title>
 </head>
 
 <body>
@@ -65,15 +65,17 @@
 
     <div id="settings-icon" onclick="toggleSettings()">⚙️</div>
 
-    <div id="settings-popup">
-        <label for="theme">Izaberite temu:</label>
-        <select id="theme" onchange="changeTheme()">
-            <option value="dark">Crna Tema</option>
-            <option value="white">Bela Tema</option>
-        </select>
-    </div>
+<div id="settings-popup">
+    <label for="theme">Izaberite Temu:</label>
+    <select id="theme" onchange="changeTheme()">
+        <option value="dark">Crna Tema</option>
+        <option value="light">Svetla Tema</option>
+    </select>
+
+    <label for="beta-checkbox">Beta Verzija</label>
+    <input type="checkbox" id="beta-checkbox">
+</div>
 
     <script src="script.js"></script>
 </body>
 
-</html>
