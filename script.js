@@ -33,7 +33,6 @@ function changeTheme() {
     }
 }
 
-// Check if a theme preference is saved in localStorage
 var savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     // Apply the saved theme
