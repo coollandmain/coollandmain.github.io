@@ -22,8 +22,15 @@ function changeTheme() {
     var theme = document.getElementById('theme').value;
     document.body.style.backgroundColor = (theme === 'dark') ? 'black' : 'white';
     document.body.style.color = (theme === 'dark') ? 'white' : 'black';
+    
     // Save the theme preference to localStorage
     localStorage.setItem('theme', theme);
+    
+    // Check if the beta version checkbox is checked
+    var betaCheckbox = document.getElementById('beta-checkbox');
+    if (betaCheckbox && betaCheckbox.checked) {
+        window.location.href = 'https://coollandmain.github.io/coollandtest/';
+    }
 }
 
 // Check if a theme preference is saved in localStorage
@@ -41,13 +48,11 @@ window.addEventListener('beforeunload', function () {
         document.body.style.color = 'black';
     }
 });
-    
+
 //phone
 document.getElementById('button-home').addEventListener('click', showHome);
 document.getElementById('button-events').addEventListener('click', showEvents);
 document.getElementById('button-home').addEventListener('touchend', showHome);
 document.getElementById('button-events').addEventListener('touchend', showEvents);
-
-
 
 window.onload = initializePage;
