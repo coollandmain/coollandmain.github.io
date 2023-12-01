@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: black; /* Default dark mode */
     color: white;
     font-family: Kanit, sans-serif;
     margin: 0;
@@ -50,6 +50,7 @@ body {
     box-sizing: border-box;
     overflow-y: auto;
     z-index: 1;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
 }
 
 #content {
@@ -87,9 +88,16 @@ body {
     border-radius: 10px; /* Add smooth edges */
 }
 
+
+#menu.transformed {
+    transform: translateX(-150px);
+}
 #content {
-    margin-left: 300px;
-    padding: 20px;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+#content.content-transformed {
+    transform: translateX(-100px);
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
 }
 
 /* Phone Screen*/
@@ -109,6 +117,7 @@ body {
     box-sizing: border-box;
     overflow-y: auto;
     z-index: 1;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
 }
 #button-home,
 #button-events {
