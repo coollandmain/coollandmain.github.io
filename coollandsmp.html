@@ -55,18 +55,19 @@
         document.body.style.backgroundColor = (theme === 'dark') ? 'black' : 'white';
         document.body.style.color = (theme === 'dark') ? 'white' : 'black';
     
-    // Save the theme preference to localStorage
+        // Save the theme preference to localStorage
         localStorage.setItem('theme', theme);
     
     }
 
-// Check if a theme preference is saved in localStorage
+    // Check if a theme preference is saved in localStorage
     var savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
-    // Apply the saved theme
+        // Apply the saved theme
         document.getElementById('theme').value = savedTheme;
         changeTheme();
     }
+    </script>
 
     <div id="content">
         <h1 id="coolland-smp-title">Coolland SMP</h1>
