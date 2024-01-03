@@ -42,34 +42,15 @@
 
         #coolland-smp-title {
             font-size: 36px;
-            margin-bottom: 10px;
+            margin-bottom: 10px
         }
 
         #work-in-progress {
             font-size: 18px;
         }
     </style>
-    <script>
-    function changeTheme() {
-        var theme = document.getElementById('theme').value;
-        document.body.style.backgroundColor = (theme === 'dark') ? 'black' : 'white';
-        document.body.style.color = (theme === 'dark') ? 'white' : 'black';
-    
-        // Save the theme preference to localStorage
-        localStorage.setItem('theme', theme);
-    
-    }
-
-    // Check if a theme preference is saved in localStorage
-    var savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        // Apply the saved theme
-        document.getElementById('theme').value = savedTheme;
-        changeTheme();
-    }
-    </script>
-
     <div id="content">
+        <img id="coolland-smp-picture" href="https://i.imgur.com/P1OTrI1.png">
         <h1 id="coolland-smp-title">Coolland SMP</h1>
         <p id="work-in-progress">THIS IS WORK IN PROGRESS</p>
     </div>
