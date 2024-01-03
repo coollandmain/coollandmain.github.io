@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Kanit&display=swap" rel="stylesheet">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coolland SMP</title>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Kanit&display=swap" rel="stylesheet">
 
-<body>
-    <div id="header">
-        <a href="https://coollandmain.github.io" class="back-arrow">🡸</a>
-    </div>
-        <style>
+    <style>
         body {
-            background-color: black; /* Change to the desired background color */
-            color: white; /* Change to the desired text color */
+            background-color: black;
+            color: white;
             font-family: 'Cabin', sans-serif;
             margin: 0;
             padding: 0;
         }
 
         #header {
-            padding: 20px; /* Increase padding for the header */
+            padding: 20px;
         }
 
         .back-arrow {
-            font-size: 36px; /* Increase font size for the arrow */
+            font-size: 36px;
             text-decoration: none;
-            color: white; /* Match text color to the theme */
+            color: white;
         }
 
         #content {
@@ -43,20 +37,29 @@
             font-size: 36px;
             margin-bottom: 10px
         }
+
         #coolland-smp-picture {
-            font-size: 36px;
+            max-width: 100%; /* Adjust the image size if needed */
+            height: auto;
             margin-bottom: 10px
         }
+
         #work-in-progress {
             font-size: 18px;
         }
     </style>
-    <div id="content">
-        <img id="coolland-smp-picture" href="https://i.imgur.com/P1OTrI1.png">
-        <img id="coolland-smp-title" href="https://i.imgur.com/P1OTrI1.png">
-        <p id="work-in-progress">THIS IS WORK IN PROGRESS</p>
+</head>
+
+<body>
+    <div id="header">
+        <a href="https://coollandmain.github.io" class="back-arrow">🡸</a>
     </div>
 
+    <div id="content">
+        <img id="coolland-smp-picture" src="https://i.imgur.com/P1OTrI1.png" alt="Coolland SMP Picture">
+        <h1 id="coolland-smp-title">Coolland SMP</h1>
+        <p id="work-in-progress">THIS IS WORK IN PROGRESS</p>
+    </div>
 </body>
 
 </html>
