@@ -14,6 +14,16 @@ body {
 #events-local-content {
     font-size: 18px;
     }
+       
+#coolland-smp-picture {
+    max-width: 70%; /* Adjust the image size if needed */
+    height: auto;
+    margin-bottom: 10px
+    }
+
+#smp-local-content {
+    font-size: 18px;
+ }
 #button-home:hover,
 #button-smp:hover,
 #button-events:hover {
