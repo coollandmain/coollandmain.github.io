@@ -1,5 +1,5 @@
 body {
-    background-color: black; /* Default dark mode */
+    background-color: black;
     color: white;
     font-family: Kanit, sans-serif;
     margin: 0;
@@ -7,6 +7,7 @@ body {
 }
 
 #button-home:hover,
+#button-smp:hover,
 #button-events:hover {
     background-color: #555; /* Change the color to your desired hover color */
     cursor: pointer;
@@ -18,6 +19,7 @@ body {
     padding: 10px;
 }
 #button-home,
+#button-smp,
 #button-events {
     margin-left: -30px; /* Move the buttons 30 pixels to the left */
     background-color: #42413e;
@@ -120,6 +122,57 @@ body {
     transition: transform 0.3s ease; /* Add transition for smooth animation */
 }
 #button-home,
+#button-smp,
+#button-events {
+    margin-left: -60px;
+}
+#settings-icon {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 3;
+}
+
+#settings-popup {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    left: 10px;
+    background-color: #f0f0f0; /* Light gray color */
+    padding: 10px;
+    color: black;
+    z-index: 2;
+    border-radius: 10px; /* Add smooth edges */
+}
+
+#content {
+    margin-left: 300px;
+    padding: 20px;
+}
+
+/* Phone Screen*/
+@media screen and (max-width: 600px) {
+    #content {
+        margin-left: 115px;
+    }
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+#button-home,
+#button-smp,
 #button-events {
     margin-left: -60px;
 }
