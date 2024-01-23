@@ -43,12 +43,204 @@
         #events-local-content {
             font-size: 18px;
         }
+        /* Menu */
+body {
+    background-color: black;
+    color: white;
+    font-family: Kanit, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#button-home:hover,
+#button-smp:hover,
+#button-events:hover {
+    background-color: #555; /* Change the color to your desired hover color */
+    cursor: pointer;
+}
+
+
+#header {
+    text-align: right;
+    padding: 10px;
+}
+#button-home,
+#button-smp,
+#button-events {
+    margin-left: -30px; /* Move the buttons 30 pixels to the left */
+    background-color: #42413e;
+}
+.header-button,
+.lime-background {
+    align-items: end;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #42413e;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    display: inline-block;
+}
+.lime-background:hover{
+    background-color: #555; /* Change the color to your desired hover color */
+    cursor: pointer;
+}
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    z-index: 1;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+#content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+#home {
+    display: block;
+}
+
+#coolland-smp,
+#coolland-events {
+    display: none;
+}
+
+#settings-icon {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 3;
+}
+
+#settings-popup {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    left: 10px;
+    background-color: #f0f0f0; /* Light gray color */
+    padding: 10px;
+    color: black;
+    z-index: 2;
+    border-radius: 10px; /* Add smooth edges */
+}
+
+
+#menu.transformed {
+    transform: translateX(-150px);
+}
+#content {
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+#content.content-transformed {
+    transform: translateX(-100px);
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+/* Phone Screen*/
+@media screen and (max-width: 600px) {
+    #content {
+        margin-left: 115px;
+    }
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    z-index: 1;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+#button-home,
+#button-smp,
+#button-events {
+    margin-left: -60px;
+}
+#settings-icon {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 3;
+}
+
+#settings-popup {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    left: 10px;
+    background-color: #f0f0f0; /* Light gray color */
+    padding: 10px;
+    color: black;
+    z-index: 2;
+    border-radius: 10px; /* Add smooth edges */
+}
+
+#content {
+    margin-left: 300px;
+    padding: 20px;
+}
+
+/* Phone Screen*/
+@media screen and (max-width: 600px) {
+    #content {
+        margin-left: 115px;
+    }
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+#button-home,
+#button-smp,
+#button-events {
+    margin-left: -60px;
+}
     </style>
 </head>
 
 <body>
     <div id="header">
         <a href="https://coollandmc.github.io" class="back-arrow">🡸</a>
+    </div>
+    <div id="menu">
+        <ul>
+            <a href="https://coollandmc.github.io/coollandsmp.html">
+                <li id="button-smp" class="header-button">Coolland SMP</li>
+            </a>
+            <a href="https://coollandmc.github.io/coollandevents.html">
+                <li id="button-events" class="header-button">Coolland Events</li>
+            </a>
+            <a href="https://coollandmc.github.io/">
+                <li id="button-home" class="header-button">Coolland Home</li>
+            </a>
+        </ul>
     </div>
 
     <div id="content">
