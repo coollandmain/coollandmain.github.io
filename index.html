@@ -13,15 +13,17 @@
 <body>
 
     <header>
+    <div id="nav-placeholder"></div>
     <h1>Coolland</h1>
     </header>
-    <div class="navbar">
-        <a href="https://www.coollandmc.github.io/coollandevents" target="_blank">Coolland Events</a>
-        <a href="https://www.coollandmc.github.io/coollandsmp" target="_blank">Coolland SMP</a>
-    </div>
     <main>
     <i>&#xf007;</i>
     </main>
 <script src="script.js"></script>
+<script>
+    fetch('navigation.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('nav-placeholder').innerHTML = data);
+</script>
 </body>
 </html>
